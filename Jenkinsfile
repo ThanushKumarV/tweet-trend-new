@@ -4,10 +4,11 @@ pipeline{
         label "maven"
     }
     }
-    stages ("code checkout")
+    stages{
+    stage ("code checkout")
     {
         steps {
             git branch : 'main', url : 'https://github.com/ThanushKumarV/tweet-trend-new.git'
         }
     }
-}
+}}
