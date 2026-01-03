@@ -41,6 +41,7 @@ environment {
             
             }
         } 
+    }
     stage(" Docker Build ") {
       steps {
         script {
@@ -61,6 +62,5 @@ environment {
                echo '<--------------- Docker Publish Ended --------------->'  
             }
         }
-    }  
-    }   
+    }     
 }}
