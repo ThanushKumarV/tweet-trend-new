@@ -11,7 +11,7 @@ environment {
     stage ("build")
     {
         steps {
-            sh 'mvn clean install -DforkCount=0'
+            sh 'mvn clean deploy -DforkCount=0'
         }
     }
 }}
