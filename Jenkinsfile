@@ -1,5 +1,5 @@
-def registry = 'https://trial6da75d.jfrog.io'
-def imageName = 'trial6da75d.jfrog.io/udemy-docker-local/ttrend'
+def registry = 'https://trialw7u6jl.jfrog.io'
+def imageName = 'trialw7u6jl.jfrog.io/udemy-docker-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline{
     agent {
@@ -27,7 +27,7 @@ environment {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "mavenudemy-libs-release-local/{1}",
+                              "target": "udemy-libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
